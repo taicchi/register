@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="register.css">
+    <title>3レジ締め計算</title>
+</head>
+<body>
+    <div class="calculator">
+        <div class="input-container">
+            <label for="num1">10内税売計:</label>
+            <div class="input-group">
+                <input type="number" id="num1">
+                <span class="unit">円</span>
+            </div>
+
+            <label for="num2">10内税:</label>
+            <div class="input-group">
+                <input type="number" id="num2">
+                <span class="unit">円</span>
+            </div>
+
+            <label for="num3">08内税売計:</label>
+            <div class="input-group">
+                <input type="number" id="num3">
+                <span class="unit">円</span>
+            </div>
+
+            <label for="num4">08内税:</label>
+            <div class="input-group">
+                <input type="number" id="num4">
+                <span class="unit">円</span>
+            </div>
+
+            <label for="num5">商品外計(抜):</label>
+            <div class="input-group">
+                <input type="number" id="num5">
+                <span class="unit">円</span>
+            </div>
+
+            <label for="num6">商品外計(込):</label>
+            <div class="input-group">
+                <input type="number" id="num6">
+                <span class="unit">円</span>
+            </div>
+
+            <label for="num7">商品外部門税合:</label>
+            <div class="input-group">
+                <input type="number" id="num7">
+                <span class="unit">円</span>
+            </div>
+
+            <label for="num8">酒代(抜):</label>
+            <div class="input-group">
+                <input type="number" id="num8">
+                <span class="unit">円</span>
+            </div>
+        </div>
+
+        <button onclick="calculate()">計算</button>
+
+        <div class="results">
+            <p id="result1">純売上10%物販: <span class="unit">円</span></p>
+            <p id="result2">純売上8%: <span class="unit">円</span></p>
+            <p id="result3">消費税10%物販: <span class="unit">円</span></p>
+            <p id="result4">その他控除: <span class="unit">円</span></p>
+        </div>
+    </div>
+
+    <script src="register.js"></script>
+</body>
+</html>
+
+</html>
